@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="557.063px" height="97.74px" viewBox="0 0 557.063 97.74" enable-background="new 0 0 557.063 97.74" xml:space="preserve">
+<g>
+	<g>
+		<path class="target" fill="none" stroke="#74C044" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M517.033,34.796
+			c-2.034,0.135-4.026,0.304-5.979,0.504"/>
+
+			<path mask='url(#myMask)' class="path" fill="none" stroke="#74C044" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="11.855,11.855" d="
+			M499.315,36.949c-49.139,8.807-71.287,37.336-101.131,33.116c-42.982-6.077-54.405-43.972-96.104-52.634
+			c-39.239-8.148-58.372,29.27-82.173,49.198c-14.703,12.313-41.316,17.053-58.511,11.925
+			c-26.112-7.785-50.307-21.037-75.511-31.193c-13.962-5.625-47.313-23.434-71.473,0.136"/>
+<mask id="myMask">
+			<path class="mask" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="11.855,11.855" d="
+			M499.315,36.949c-49.139,8.807-71.287,37.336-101.131,33.116c-42.982-6.077-54.405-43.972-96.104-52.634
+			c-39.239-8.148-58.372,29.27-82.173,49.198c-14.703,12.313-41.316,17.053-58.511,11.925
+			c-26.112-7.785-50.307-21.037-75.511-31.193c-13.962-5.625-47.313-23.434-71.473,0.136"/>
+</mask>
+		<path fill="none" stroke="#74C044" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M10.421,51.882
+			c-1.21,1.492-2.39,3.106-3.536,4.851"/>
+	</g>
+</g>
+<g>
+
+		<path class="target" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#74C044" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M525.02,46.637c6.381-5.771,13.96-14.624,19.571-21.121"/>
+
+		<path class="target" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#74C044" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M527.308,25.516c8.045,11.364,10.091,15.669,19.231,27.357"/>
+</g>
+</svg>

@@ -1,0 +1,366 @@
+@import "variables";
+
+.journey h1,
+.self-learning h1,
+.people-who-inspire-me h1 {
+  margin-bottom: 1rem;
+}
+.bold{
+  font-weight: 500;
+  color: $color-two;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $font-three;
+}
+p {
+  font-family: $font-one;
+  line-height: 1.4;
+}
+::selection {
+    background: $color-two;
+}
+// global
+
+.story-title h1 {
+  font-size: 3.5rem;
+  color: $color-two;
+  margin-bottom: 0.2rem;
+}
+.my-story-to-imagebox p{
+    color: $color-six;
+      margin-bottom: 1rem;
+}
+.my-story-to-imagebox p, .self-learning p {
+    font-size: 1rem;
+}
+.to {
+  font-family: $font-three;
+  font-size: 2rem;
+  color: $color-one;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-for-self-learning-text p {
+    margin-bottom: 1rem;
+}
+
+// end header
+
+.journey h1 {
+  font-size: 2rem;
+  color: $color-one;
+}
+.journey h1:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 243px;
+  margin: 0.5rem auto;
+  background: $color-one;
+}
+// journey
+
+.self-learning h1 {
+  font-size: 2rem;
+  color: $color-three;
+}
+.self-learning h1:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 198px;
+  margin: 0.8rem auto;
+  background-color: $color-three;
+}
+// self-learner
+
+.people-who-inspire-me h1 {
+  font-family: $font-two;
+  font-size: 2.5rem;
+  color: $color-two;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+span.inspire {
+  color: $color-one;
+  font-size: 4rem;
+}
+.me-to-be-great {
+  font-size: 2rem;
+}
+.people {
+  text-align: left;
+}
+.profile h3 {
+  color: $color-one;
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+}
+.profile h4 {
+  color: $color-two;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.profile h4:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 185px;
+  margin: 0.9rem auto;
+  background-color: $color-one;
+}
+.profile p {
+  color: $color-two;
+  font-size: 1rem;
+}
+// people who inspire me
+
+.what-im-doing-now {
+  text-align: center;
+}
+.what-im-doing-now p {
+  color: $color-one;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $color-two;
+  font-family: $font-three;
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.author a {
+  color: $color-one;
+}
+
+.what-im-doing-now h1 {
+  font-size: 3rem;
+  color: $color-one;
+}
+.what-im-doing-now h1:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 304px;
+  margin: 0.8rem auto;
+  background: $color-one;
+}
+// what im doing now
+
+.how-i-made-this-project h1 {
+  font-size: 3rem;
+  color: $color-two;
+  text-align: center;
+}
+.how-i-made-this-project h1:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 243px;
+  margin: 1rem auto;
+  background: $color-one;
+}
+.tools{
+  margin-bottom: 1.5rem;
+}
+li{
+  font-family: $font-three;
+  color: $color-one;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+li:before{
+  content: "-";
+  margin-right: 0.3rem;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+// how i made this project
+
+@media only screen and (min-width: 375px) {
+  h1 {
+    font-size: 5rem;
+    color: $color-two;
+  }
+}
+
+// mobile-lg
+
+@media only screen and (min-width: 425px) {
+  h1 {
+    font-size: 10rem;
+    color: $color-four;
+  }
+}
+
+// tablet
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 10rem;
+    color: $color-five;
+  }
+  .self-learning h1:after {
+    margin: 1rem auto 1rem 0;
+  }
+  .my-story-to-imagebox {
+    text-align: left;
+  }
+  .book-graphic {
+    position: relative;
+  }
+  .profile h3 {
+    font-size: 1.3rem;
+  }
+  .profile h4 {
+    font-size: 1rem;
+  }
+  .profile p {
+    font-size: 0.9rem;
+  }
+  .what-im-doing-now {
+    text-align: left;
+  }
+  .what-im-doing-now h1:after {
+    margin: 1rem auto 1rem 0;
+  }
+  .box-for-people-inspire-me h1 {
+    margin-bottom: 3rem;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+  .story-title h1 {
+    font-size: 4rem;
+  }
+  .to {
+    font-size: 3rem;
+  }
+  .tools{
+    font-size: 1.5rem;
+  }
+  .tools li{
+    font-size: 1.2rem;
+    line-height: 36px;
+  }
+  .how-i-made-this-project h1:after {
+    width: 100%;
+ }
+}
+
+// tablet-lg
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 10rem;
+    color: $color-five;
+  }
+  .profile p {
+    padding: 0 0.8rem;
+  }
+  .profile h4:after {
+    width: 144px;
+  }
+  .self-learning h1 {
+    font-size: 3rem;
+  }
+  .self-learning h1:after {
+    width: 267px;
+  }
+  .what-im-doing-now p {
+    margin-bottom: 2rem;
+  }
+  .tools {
+    text-align: left;
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.4rem;
+ }
+}
+
+// tablet-lg
+
+@media only screen and (min-width: 1440px) {
+  .box-for-self-learning-text p, .what-im-doing-now p{
+    width: 588px;
+  }
+  .tools{
+    margin-bottom: 4rem;
+  }
+  li{
+    text-align: left;
+    line-height: 35px;
+  }
+  .how-i-made-this-project h1 {
+    font-size: 4.5rem;
+    color: #f58f71;
+    text-align: center;
+}
+  .how-i-made-this-project h1:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 1.5rem auto;
+    background: #813c97;
+}
+
+  .self-learning h1 {
+    margin-bottom: 0;
+  }
+  .people-who-inspire-me h1 {
+    font-size: 3.3rem;
+  }
+  .me-to-be-great {
+    font-size: 2.7rem;
+  }
+  span.inspire {
+    font-size: 5.4rem;
+  }
+  h1 {
+    font-size: 10rem;
+    color: $color-five;
+  }
+  .self-learning h1 {
+    font-size: 3.5rem;
+  }
+  .self-learning h1:after {
+    width: 315px;
+  }
+  .what-im-doing-now h1 {
+    font-size: 3.5rem;
+  }
+  .what-im-doing-now h1:after {
+    width: 303px;
+    margin: 1.2rem auto 1.2rem 0;
+  }
+  .to {
+    font-size: 2.8rem;
+  }
+  .story-title h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+  }
+  .my-story-to-imagebox p, .self-learning p, .what-im-doing-now p{
+    font-size: 1.2rem;
+  }
+}
+
+// tablet-lg

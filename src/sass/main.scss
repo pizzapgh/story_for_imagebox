@@ -1,0 +1,459 @@
+/* Main SCSS File */
+
+// Base
+@import "variables";
+
+@import "type";
+
+@import "reset";
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes InDown {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.info{
+  opacity: 0;
+  transition: all 400ms ease-in;
+}
+.js-fadeIn-animate{
+ opacity: 1;
+}
+.js-InDown-animate{
+  animation: InDown 450ms linear;
+}
+
+@keyframes easeIn {
+  to{opacity:0;
+  }
+  from{opacity:1;
+  }
+}
+
+// animations
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 582px;
+  display: flex;
+  text-align: center;
+  padding: 0 0 2.5rem;
+  animation-name: fadeInDown;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 0.45s;
+}
+.story-title {
+  margin: 1.1rem auto;
+  text-align: center;
+}
+.ghost:after {
+  content: "";
+  display: block;
+  border: 0.5px solid $color-one;
+  margin: 1.5rem 0;
+}
+.me {
+  margin-bottom: 0.5rem;
+  width: 115px;
+}
+.imagebox {
+  width: 172px;
+  vertical-align: middle;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.states-graphic {
+  width: 290px;
+  align-self: center;
+}
+.box-for-state-image{
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+#dashed-line{
+  position: absolute;
+  left: 35px;
+  top: -9px;
+  width: 198px;
+}
+.mask {
+  stroke-dasharray: 600;
+  animation: dash 2s linear forwards;
+}
+.target{
+  transform: scale(0);
+  transform-origin: center center;
+  animation: target 0.5s linear 2s forwards;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: -600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes target {
+  to {
+    transform: scale(1)
+  }
+}
+
+// story-title
+
+.journey {
+  background: $color-three;
+  position: relative;
+  display: flex;
+  height: 492px;
+  padding: 0rem 0 1.6rem;
+  flex-direction: column;
+  text-align: center;
+  color: $color-one;
+}
+
+.book-graphic-2 {
+  display: none;
+}
+
+// journey
+
+.book-graphic {
+  position: absolute;
+  z-index: 10;
+  top: -158px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 188px;
+}
+.self-learning {
+  background: $color-one;
+  position: relative;
+  display: flex;
+  height: 425px;
+  padding: 6.6rem 0 1rem;
+  flex-direction: column;
+  text-align: center;
+  color: $color-three;
+}
+.box-for-book-graphic, .box-for-self-learning-text {
+  animation-name: InDown;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 0.55s;
+}
+
+// self-learning
+
+.people {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.people > div {
+  width: 85%;
+  margin: 0 auto 1rem;
+}
+.people > div > img {
+  margin-bottom: 2rem;
+  width: 170px;
+}
+.people-who-inspire-me {
+  padding: 1.5rem 0 1rem;
+}
+.people-who-inspire-me .container{
+  animation-name: InDown;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 0.85s;
+}
+
+.people-who-inspire-me .col {
+  position: relative;
+}
+// people who inspire me
+
+.what-im-doing-now {
+  background-color: $color-five;
+  padding: 6rem 0 1rem;
+  background-image: url("../assets/what-im-doing.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 104%;
+}
+.apron {
+  margin-bottom: 1rem;
+  width: 180px;
+}
+.local-market-content{
+  animation-name: InDown;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 2s;
+}
+// what im doing now
+
+.mobile-snaps{
+  width: 100%;
+}
+.snaps{
+  display: none;
+}
+
+.how-i-made-this-project{
+      padding: 2rem 0 1rem;
+}
+
+
+// how-i-made-this-Project
+
+@media only screen and (min-width: 340px) {
+  .box-for-state-image{
+    position: relative;
+    width: 340px;
+    margin: auto;
+  }
+  #dashed-line {
+      position: absolute;
+      left: 42px;
+      top: -11px;
+      width: 211px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  #dashed-line {
+    position: absolute;
+    left: 35px;
+    top: -5px;
+    width: 246px;
+  }
+  .states-graphic {
+    width: 340px;
+  }
+  .book-graphic{
+    top: -176px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  #dashed-line {
+    position: absolute;
+    left: 44px;
+    top: -3px;
+    width: 265px;
+}
+  .states-graphic {
+    width: 367px;
+  }
+  .book-graphic{
+    top: -183px;
+    width: 222px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-snaps{
+    display:none;
+  }
+  .snaps{
+    display: block;
+    width: 100%;
+  }
+  .box-for-state-image {
+    width: 596px;
+}
+  #dashed-line {
+    position: absolute;
+    left: 64px;
+    top: 24px;
+    width: 424px;
+}
+  .flex {
+    flex-direction: row;
+    align-items: center;
+  }
+  .my-story-to-imagebox {
+    height: 565px;
+  }
+  .my-story-to-imagebox .flex {
+    flex-direction: column;
+  }
+  .people-who-inspire-me .flex {
+    flex-direction: column;
+  }
+  header {
+    height: 513px;
+    padding: 0;
+  }
+  .story-title {
+    display: row;
+    justify-content: space-between;
+  }
+  .states-graphic {
+    width: 580px;
+  }
+  .book-graphic-2 {
+    display: block;
+    margin-right: 2rem;
+    width: 255px;
+  }
+  .book-graphic {
+    display: none;
+  }
+  .self-learning {
+    text-align: left;
+    padding: 0;
+  }
+  .people-who-inspire-me .col:last-of-type {
+    display: flex;
+    flex: 1;
+  }
+  .people-who-inspire-me .col h1 {
+    text-align: center;
+  }
+  .people {
+    flex-direction: row;
+  }
+  .apron {
+    width: 288px;
+    margin-right: 2rem;
+  }
+  .what-im-doing-now {
+    background-image: url(../assets/what-im-doing-2.png);
+    background-repeat: none;
+  }
+  .imagebox {
+    width: 197px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .box-for-state-image {
+    width: 548px;
+}
+  #dashed-line{
+    position: absolute;
+    left: 65px;
+    top: 30px;
+    width: 398px;
+  }
+  .container {
+    max-width: 860px;
+  }
+  .people-who-inspire-me .container {
+    position: relative;
+  }
+  .self-learner .col:nth-of-child(1) {
+    flex: 0.9;
+  }
+  .book-graphic-2 {
+    width: 395px;
+  }
+  .self-learning .col {
+    flex: 1;
+  }
+  .what-im-doing-now .col {
+    flex: 1;
+  }
+
+  .apron {
+    width: 375px;
+  }
+  .my-story-to-imagebox {
+    height: 423px;
+  }
+
+  .my-story-to-imagebox .flex {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .box-for-state-image {
+    width: 646px;
+}
+  .how-i-made-this-project {
+    padding: 4.5rem 0 5rem;
+}
+  #dashed-line{
+    position: absolute;
+    left: 80px;
+    top: 50px;
+    width: 495px;
+  }
+  .self-learning {
+    height: 583px;
+  }
+  .book-graphic-2 {
+    width: 500px;
+  }
+  .people-who-inspire-me .flex {
+    flex-direction: row;
+  }
+  .people-who-inspire-me .col:last-of-type {
+    position: absolute;
+    top: -75px;
+    right: 0;
+    width: 50%;
+  }
+  .people-who-inspire-me {
+    height: 310px;
+  }
+  .container {
+    max-width: 1070px;
+  }
+  .box-for-people-inspire-me {
+    margin: 2rem auto 1rem 6rem;
+  }
+
+  .people > div > img {
+    width: 202px;
+  }
+  .apron {
+    width: 445px;
+  }
+  .what-im-doing-now {
+    background-image: url("../assets/what-im-doing-3.png");
+  }
+  .imagebox {
+    width: 269px;
+  }
+  .states-graphic {
+    width: 700px;
+  }
+  .snaps{
+    margin-bottom: 4.1rem;
+  }
+
+}
